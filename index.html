@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ejercicio Maquetado: BUPPIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+   
+   <!-- ENCABEZADO -->
+    <header>
+       <div id="header-top" class="container">
+          
+           <div id="logo">
+               <h1>
+                   <a href="#"><img src="img/logo-despegar.png" alt="despegar.com"></a>
+               </h1> 
+           </div> <!-- Cierra #logo -->
+           
+           <div id="menu-personal">
+               <ul>
+                   <li><a href="#">Iniciar Sesión</a></li>
+                   <li><a href="#">Favoritos</a></li>
+                   
+               </ul>
+           </div> <!-- Cierra #menu-personal -->
+           
+           <div id="emblema">
+               <img src="img/mejor-precio.svg" alt="El mejor precio garantizado">
+           </div> <!-- Cierra #emblema -->
+           
+       </div><!-- Cierra #header-top -->
+        
+       <div id="header-bottom">
+           <nav id="nav-main" class="container">
+               <ul>
+                   <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Hoteles</a></li>
+                   <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>Vuelos</a></li>
+                   <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i>Autos</a></li>
+                   <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Alquileres Temporarios</a></li>
+               </ul>
+           </nav>
+           <div id="nav-trigger">
+            <span>Menu</span>
+       </div>
+       <nav id="nav-mobile"></nav> 
+       </div> <!-- Cierra #header-bottom -->
+          
+    </header>
+    
+    <main id="busqueda" class="container">
+        <header>
+            <ul class="breadcrumb">
+              <li><a href="#">Despegar.com</a></li>
+              <li><a href="#">Hoteles</a></li>
+              <li><a href="#">Hoteles en Estados Unidos</a></li>
+              <li>Hoteles en Miami Beach <span class="arial">(182)</span></li>
+            </ul>
+            
+            <h2 class="resultado"><span class="arial">182</span> hoteles disponibles para estas fechas en Miami Beach <a href="#">con mejor precio garantizado</a></h2>
+
+                <div id="social">
+                    <a href="#" class="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                </div> <!-- Cierra #social -->
+            
+        </header> <!-- Termina el encabezado de búsqueda -->
+        
+        <div class="row">
+            <div id="newsletter" class="col-3">
+                <aside class="newsletter">
+                    <form action="#" class="clearfix">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Ingrese su nombre..." id="nombre" name="nombre">
+                        
+                        <div class="form-container">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="text" placeholder="Teléfono" id="telefono" name="telefono">
+                            </div>
+
+                            <div class="form-group right">
+                                <label for="email">Email *</label>
+                                <input type="email" placeholder="Email" id="email" name="email">
+                            </div>
+                        </div>
+                        
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" placeholder="0" id="cantidad" name="cantidad">
+                        
+                        <input type="checkbox" id="suerte" name="suerte" >
+                        <label for="suerte">Voy a tener suerte</label>
+                        
+                        <input type="text" placeholder="Ciudad de destino" name="destino" id="destino">
+                        
+                        <div class="check-group">
+                            <input type="checkbox" id="suscribirse" name="suscrib">
+                            <label for="suscribirse">Suscribirme al newsletter</label>    
+                        </div>
+                        
+                        <div class="check-group">
+                            <input type="checkbox" id="ofertas" name="ofertas">
+                            <label for="ofertas">Recibir ofertas</label>    
+                        </div>
+                        
+                        
+                        <input type="submit">
+                    </form>
+                </aside>
+                <aside class="relleno">
+                    
+                </aside>    
+            </div>
+            
+            <section class="col-9">
+                <div class="filtros row">
+                    <form class="col-12" action="#">
+                        <label for="ordenar">Ordenar por</label>
+                        <select name="ordenar" id="ordenar">
+                            <option value="elegidos" selected>Más elegidos</option>
+                            <option value="menorprecio">Menor precio</option>
+                            <option value="mayorprecio">Mayor precio</option>
+                        </select>
+                        <label for="moneda">Moneda</label>
+                        <select name="moneda" id="moneda">
+                            <option value="args" selected>Pesos Argentinos</option>
+                            <option value="usd">Dólar Estadounidense</option>
+                            <option value="euro">Euro</option>
+                        </select>
+                    </form>
+                </div>
+                <article class="row promo paris">
+                    <div class="col-4">
+                        <div class="img-overlay">
+                            <img src="img/paris.jpg" alt="Imagen otoñal de la ciudad de Paris">
+                            <span class="overlay">Paris</span> 
+                        </div>
+                    </div> <!-- Cierra .col-4 -->
+                    
+                    <div class="col-3">
+                        <h3>Viajá a Paris <span class="descuento">50% Off</span></h3>
+                        <a href="#" class="boton">Saber Más</a>
+                    </div> <!-- Cierra .col-3 -->
+                    
+                    <div class="col-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quas, eveniet. Vel est minus inventore temporibus commodi, sapiente voluptas autem consequatur modi! Odit laboriosam, praesentium ducimus animi iste? Similique, maiores. Excepteur sint occaecat cupidatat non preident, sunt in culpa qui officia deserunt mollit anim id.</p>
+                    </div> <!-- Cierra .col-4 -->
+                    
+                    <div class="col-1">
+                       <div class="conTriangulo">
+                           <div class="triangulo"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                       </div>
+                    </div> <!-- Cierra .col-1 -->
+                    
+                </article> <!-- Cierra .row .promo .paris -->
+                
+                <article class="row promo cuba">
+                    <div class="col-3">
+                        <h3>Viajá a Cuba <span class="descuento">50% Off</span></h3>
+                        <a href="#" class="boton">Saber Más</a>
+                    </div> <!-- Cierra .col-4 -->
+                    
+                    <div class="col-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quas, eveniet. Vel est minus inventore temporibus commodi, sapiente voluptas autem consequatur modi! Odit laboriosam, praesentium ducimus animi iste? Similique, maiores. Excepteur sint occaecat cupidatat non preident, sunt in culpa qui officia deserunt mollit anim id.</p>
+                    </div> <!-- Cierra .col-3 -->
+                    
+                    <div id="colCuba" class="col-4">
+                        <div class="img-overlay">
+                            <img src="img/cuba-turismo.jpg" alt="Imagen de un edificio gubernamental de Cuba">
+                        </div>
+                    </div> <!-- Cierra .col-4 -->
+                    
+                    <div class="col-1">
+                       <div class="conTriangulo">
+                           <div class="triangulo"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                       </div>
+                    </div> <!-- Cierra .col-1 -->
+                    
+                </article> <!-- Cierra .row .promo .paris -->
+            </section>
+            
+                
+        </div> <!-- Cierra .row -->
+        
+    </main>
+    
+    <footer>
+        <div class="news-secundario">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <h4>Ofertas exclusivas en su e-mail</h4>
+            <form action="#">
+                <input type="email" placeholder="Ingrese su e-mail">
+                <input type="submit">
+            </form>
+        </div>
+        <div class="relleno-footer">
+            
+        </div>
+    </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script>$(document).ready(function(){
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+});
+    </script>
+</body>
+
+</html>

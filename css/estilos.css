@@ -1,0 +1,876 @@
+/* Font Awesome - Iconos */
+@import url("vendor/font-awesome.min.css");
+
+/* Normalize y Grilla responsive */
+@import url("vendor/normalize.min.css");
+@import url("grilla.css");
+
+/* Tipografías de Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Oswald:300,400,700');
+
+/*
+Estilos generales
+*/
+
+
+body {
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+}
+
+h1 {
+    margin:10px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color:#319FE0;
+}
+
+span.arial {
+    font-family: 'Arial';
+}
+
+input {
+    border:1px solid #eee;
+    padding:5px;
+    font-size:0.7em;
+}
+
+/*
+#Header Top
+*/
+
+#header-top {
+    display: table;
+    width:100%;
+}
+
+#menu-personal {
+    display: table-cell;
+    vertical-align:baseline;
+}
+
+#menu-personal ul {
+    float:right;
+    margin-right:150px;
+}
+
+#menu-personal ul li {
+    margin-left:20px;
+}
+
+#emblema {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+#emblema img{
+    display: block;
+    position: absolute;
+    right:0px;
+    top:25px;
+}
+
+/*
+#Header Bottom (Navegación principal)
+*/
+
+#header-bottom {
+    background:#84A8FB;
+}
+
+#header-bottom ul {
+    padding:5px 0;
+    margin:0;
+}
+
+#header-bottom ul li {
+    padding:10px;
+    border-radius:5px;
+    margin-right:20px;
+    cursor:pointer;
+}
+
+#header-bottom ul li:hover{
+    background: #9DB9FC;
+}
+
+#header-bottom ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#header-bottom ul li a i {
+    margin-right:10px;
+}
+
+/* Breadcrumb */
+
+ul.breadcrumb {
+    padding: 5px 10px;
+    list-style: none;
+    font-size: 0.8em;
+    margin:5px 0 0;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li:last-child {
+    color:#9b9b9b;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #9b9b9b;
+    content: "\203A";
+}
+
+ul.breadcrumb li a {
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/* Resultado de búsqueda */ 
+
+#busqueda header {
+    display:table;
+    width:100%;
+    margin-bottom:20px;
+}
+
+h2.resultado {
+    margin:5px 0;
+    display: inline-block;
+    font-size:1.4em;
+    letter-spacing: -1px;
+    padding-left:8px;
+    font-weight: 400;
+    color:#003D9F;
+}
+
+/* Social Media */
+#social {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+#social i {
+    font-size:1.5em;
+    margin:5px 0 5px 5px;
+}
+
+#social .facebook {
+    color:#3b5999;
+}
+
+#social .twitter {
+    color:#55acee;
+}
+
+#social .google {
+    color:#dd4b39;
+}
+
+
+/* Bloques*/
+
+#busqueda .promo {
+    background:#A6FF4D;
+    margin-top:20px;
+}
+
+/* Bloque Paris - Imagen */
+
+#busqueda .promo.paris .col-4:first-child {
+    padding:5px 0 0 10px;
+    margin-top:5px;
+}
+
+#busqueda .promo.paris .img-overlay {
+    position: relative;
+}
+
+#busqueda .promo.paris .img-overlay img {
+    width:100%;
+}
+
+#busqueda .promo.paris .img-overlay span.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin:0;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:4em;
+    font-weight: 700;
+
+}
+
+/* Bloque Paris - Descuento */
+
+#busqueda .promo.paris h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin:7px 0 0;
+    text-align:left;
+    font-size:1.6em;
+    display: inline-block;
+}
+
+#busqueda .promo.paris h3 .descuento {
+    display: block;
+    color:#FF327A;
+    font-weight: 700;
+    font-size:1.65em;
+}
+
+#busqueda .promo.paris a.boton {
+    display: inline-block;
+    background:#FF327A;
+    color:#fff;
+    text-transform: uppercase;
+    font-size:0.8em;
+    margin:38% 0 5%;
+    padding:8px 45px;
+}
+
+/* Bloque Paris - Texto */
+
+#busqueda .promo p {
+    font-size:0.9em;
+    line-height:1.4em;
+    margin:10px 0;
+}
+
+/* Bloque Paris - Agregar a favoritos */
+
+#busqueda .promo .col-1 {
+    padding:2px 2px 0 0;
+}
+
+#busqueda .promo .conTriangulo {
+    width:100%;
+    position:relative;
+}
+#busqueda .promo .triangulo {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #eee transparent transparent;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+#busqueda .promo .triangulo i {
+    position:absolute;
+    top:5px; 
+    left:24px;
+    color: #aaa;
+    text-transform: normal;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+    text-shadow: 0px 1px 0 rgba(140,140,140,0.75) , 0px -1px 1px rgba(0,0,0,0.8) ;
+}
+
+/* Bloque Cuba - Imagen */
+
+#busqueda .promo.cuba .col-4 {
+    padding:7px 5px 7px 7px;
+}
+
+#busqueda .promo.cuba .img-overlay img {
+    width:100%;
+    border-radius:10px;
+}
+
+/* Bloque Cuba - Descuento */
+
+#busqueda .promo.cuba .col-3 {
+    padding:0 0 0 15px;
+}
+
+#busqueda .promo.cuba h3 {
+    font-family: 'Oswald';
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:10px 0 0;
+    text-align:left;
+    font-size:1.5em;
+    display: inline-block;
+}
+
+#busqueda .promo.cuba h3 .descuento {
+    font-family: 'Arimo';
+    display: block;
+    color:#EA6D1A;
+    font-weight: 400;
+    font-size:1.85em;
+    margin-top:-10px;
+}
+
+#busqueda .promo.cuba a.boton {
+    display: inline-block;
+    background:#EA6D1A;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size:0.8em;
+    margin:32% 0 5%;
+    padding:8px 45px;
+}
+
+#busqueda .filtros {
+    background:#eee;
+    padding:15px 10px;
+}
+
+#busqueda .filtros form label {
+    color:#808080;
+    font-size:0.9em;
+    font-family: 'Arial';
+    margin-right:5px;
+}
+
+#busqueda .filtros form select {
+    font-size:0.7em;
+    width:180px;
+    padding:8px;
+    border:1px solid rgba(112,112,112,0.35);
+    border-radius:5px;
+    -webkit-box-shadow: 0px -1px 1px 0px rgba(112,112,112,1);
+    -moz-box-shadow: 0px -1px 1px 0px rgba(112,112,112,1);
+    box-shadow:inset 0px 1px 2px 0px rgba(112,112,112,0.45);
+    margin-right:20px;
+    color:#3e3d3d;
+}
+
+#busqueda .newsletter {
+    background:#FFFF33;
+    padding:5px 15px;
+}
+
+#busqueda .newsletter form {
+    margin-bottom:10px;
+}
+
+
+
+#busqueda .newsletter form label{
+    font-size:0.7em;
+}
+
+#busqueda .newsletter form label[for="nombre"],
+#busqueda .newsletter form label[for="telefono"],
+#busqueda .newsletter form label[for="email"]{
+    text-transform: uppercase;
+    padding:0 0 5px 5px;
+}
+
+#busqueda .newsletter form input#nombre {
+    width:100%;
+    margin-top:5px;
+}
+
+#busqueda .newsletter form .form-group {
+    width:45%;
+    display: inline-block;
+    margin-top:5px;
+}
+
+#busqueda .newsletter form .form-group.right {
+    float:right;
+}
+
+#busqueda .newsletter form .form-group label {
+    display: block;
+    width:70px;
+    margin:0;
+}
+
+#busqueda .newsletter form input#telefono,
+#busqueda .newsletter form input#email {
+   width:100%;
+} 
+
+#busqueda .newsletter form label[for="cantidad"]{
+    display: block;
+    margin-top:5px;
+}
+
+#busqueda .newsletter form input#cantidad {
+    width:25%;
+    margin-bottom:20px;
+}
+
+#busqueda .newsletter form label[for="suerte"],
+#busqueda .newsletter form label[for="suscribirse"],
+#busqueda .newsletter form label[for="ofertas"] {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    margin-right: 15px;
+}
+
+#busqueda .newsletter form label[for="suscribirse"],
+#busqueda .newsletter form label[for="ofertas"] {
+    padding-left:25px;
+    margin-bottom:10px;
+}
+
+#busqueda .newsletter form label[for="suerte"]:before,
+#busqueda .newsletter form label[for="suscribirse"]:before,
+#busqueda .newsletter form label[for="ofertas"]:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin:0 10px 0 20px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #fde7c4;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    border-radius:3px;
+}
+
+#busqueda .newsletter form label[for="suscribirse"]:before,
+#busqueda .newsletter form label[for="ofertas"]:before {
+    margin-left:0;
+}
+
+#busqueda .newsletter form input#suerte,
+#busqueda .newsletter form input#suscribirse, 
+#busqueda .newsletter form input#ofertas{
+    display: none;
+}
+
+#busqueda .newsletter form input#suerte:checked + label:before,
+#busqueda .newsletter form input#suscribirse:checked + label:before,
+#busqueda .newsletter form input#ofertas:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 15px;
+    background-color: #ea8d3e;
+    transition: all 0.15s linear;
+}
+
+#busqueda .newsletter form input#destino {
+    margin-bottom:20px;
+}
+
+#busqueda .newsletter form input[type="submit"] {
+    text-transform: uppercase;
+    background:#386785;
+    border:none;
+    color:#fff;
+    padding:10px 20px;
+    font-size:0.9em;
+    font-weight: 600;
+    float:right;
+}
+
+#busqueda .relleno {
+    background:#B2D0FE;
+    height:300px;
+    margin-top:20px;
+}
+
+/* FOOTER */
+
+footer {
+    background:#EEF3FA;
+    height:300px;
+}
+
+footer .news-secundario {
+    background:#ddd;
+    text-align: center;
+    margin-top:40px;
+    padding:10px;
+}
+
+footer .news-secundario h4,
+footer .news-secundario form,
+footer .news-secundario i{
+    display: inline;
+    vertical-align: middle;
+}
+
+footer .news-secundario h4,
+footer .news-secundario i {
+        color:#003D9F;
+}
+
+footer .news-secundario h4 {
+    margin:0 10px;
+    font-weight: 400;
+    font-size:1.5em;
+}
+
+footer .news-secundario i {
+    font-size:1.8em;
+}
+
+footer .news-secundario input[type="email"] {
+    font-size:0.9em;
+    padding:10px 180px 10px 10px;
+}
+
+footer .news-secundario input[type="email"]:placeholder-shown {
+    font-style: italic;
+    font-size:0.8em;
+}
+
+footer .news-secundario input[type="submit"] {
+    background: #013A8B;
+    border:none;
+    color:#fff;
+    padding:10px 15px;
+    margin-left:10px;
+    text-transform: uppercase;
+    font-size:0.8em;
+}
+
+footer .relleno-footer {
+    background:#E9EAEE;
+    height:100px;
+}
+
+#nav-trigger {
+  display: none;
+  text-align: left;
+    z-index: 30;
+}
+
+#nav-trigger span {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #84A8FB;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase; 
+z-index: 30;}
+
+#nav-trigger span:after {
+      display: inline-block;
+      margin-left: 10px;
+      width: 20px;
+      height: 10px;
+      content: "";
+      border-left: solid 10px transparent;
+      border-top: solid 10px #fff;
+      border-right: solid 10px transparent; }
+
+#nav-trigger span:hover {
+      background-color: #4d83ff; }
+
+#nav-trigger span.open:after {
+ }
+
+nav#nav-mobile {
+  position: relative;
+  display: none; 
+z-index: 30;}
+
+  nav#nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #4d83ff; 
+      z-index: 30;
+}
+  nav#nav-mobile li {
+    display: block;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-bottom: solid 1px #2668ff; 
+}
+    nav#nav-mobile li:last-child {
+      border-bottom: none; 
+}
+  nav#nav-mobile a {
+    display: block;
+    color: white;
+    padding: 10px 30px; 
+}
+    nav#nav-mobile a:hover {
+      background-color: #87acff;
+      color: #fff; }
+
+/* Media Query */
+
+@media screen and (max-width:1169px) {
+    #busqueda .promo.paris .col-4 {
+        width:65%;
+        border-top: 3px solid #eee;
+        margin-top: 2px;
+    }
+    #busqueda .promo.paris .col-4:first-child {
+        width:99%;
+        border:none;
+       
+    }
+    #busqueda .promo .col-3 {
+        width:30%;
+        border-top: 3px solid #eee;
+        margin-top: 2px;
+    }
+    #busqueda .promo.paris .col-1 {
+        width:5%;
+    }
+    #busqueda .promo.paris a.boton {
+        margin:5% 0;
+    }
+    
+    #busqueda .promo.paris p {
+        margin-top:10px;
+        line-height: 1.6em;
+    }
+    
+    #busqueda .promo.cuba .col-3{
+        border:none;
+    }
+    
+    #busqueda .promo.cuba .col-4{
+        width:65%;
+    }
+    #busqueda article.promo.cuba #colCuba.col-4 {
+        width:99%;
+        border-top: 3px solid #eee;
+        margin-top: 2px;
+    }
+    
+    #busqueda .promo.cuba .col-1 {
+        width:1%;
+    }
+    
+    #busqueda .promo.cuba a.boton {
+        margin:5% 0;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:1060px) {
+    #busqueda .row > #newsletter.col-3 {
+        width:100%;
+        margin-bottom:20px;
+    }
+    
+    #busqueda .newsletter,
+    #busqueda .relleno{
+        width:45%;
+        display: inline-block;
+    }
+    
+    #busqueda .relleno {
+        float:right;
+        height:305px;
+        margin:0px;
+    }
+    #busqueda section.col-9 {
+        width:97%;
+        right:-1.5%;
+    }
+    #busqueda .newsletter form input#destino {
+        display: block;
+    }
+}
+
+@media screen and (max-width:940px) {
+    #busqueda header h2.resultado {
+        font-size:1.7em;
+    }
+    #busqueda header h2.resultado a {
+        display: block;
+    }
+    #busqueda header #social i {
+        font-size:2em;
+    }
+    
+}
+
+@media screen and (max-width:855px) {
+    #busqueda header h2.resultado a {
+        display: inline;
+    }
+    #busqueda header #social {
+        display: block;
+    }
+    footer .news-secundario form {
+        display: block;
+        margin-top:30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #header-top #emblema {
+        display:none;
+    }
+    #header-top #logo {
+        display: inline-block;
+    }
+    #header-top #menu-personal {
+        float:right;
+        margin-top:50px;
+    }
+    #header-top #menu-personal ul {
+        margin:0;
+        padding:0;
+    }
+    #busqueda .promo.paris a.boton {
+        margin:20% 0 5%;
+    }
+    #busqueda .promo.cuba h3 .descuento {
+        font-size:1.65em;
+    }
+}
+
+@media screen and (max-width:692px) {
+    #busqueda .promo.paris h3 {
+        font-size: 1.5em;
+    }
+    #busqueda .promo.paris h3 .descuento {
+        font-size:1.35em;
+    }
+    #busqueda .promo.cuba h3 {
+        font-size:1.3em;
+    }
+    #busqueda .promo.cuba a.boton {
+        padding:8px 35px;
+        margin: 20% 0 5%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #busqueda .newsletter,
+    #busqueda .relleno{
+        width:100%;
+        margin:5px 0;
+    }
+    #nav-trigger {
+    display: block; }
+
+  nav#nav-main {
+    display: none; }
+
+  nav#nav-mobile {
+    display: block; }
+}
+#header-bottom{
+    height:50px;
+}
+
+@media screen and (max-width:640px) and (min-width:481px) {
+    #busqueda .filtros form select {
+        width:auto;
+    }
+    #busqueda .promo.paris a.boton {
+        padding:5px 10px;
+    }
+    #busqueda .promo.paris h3 {
+        font-size:1.2em;
+        letter-spacing: -1px;
+    }
+    #busqueda .promo.paris h3 .descuento {
+        font-size:1.5em;
+    }
+    #busqueda .promo .col-3 {
+        padding-left:15px;
+        padding-top:5px;
+    }
+    #busqueda .promo p,
+    #busqueda .promo.paris p{
+        font-size:0.9em;
+        line-height: 1.2em;
+    }
+    #busqueda .promo.cuba a.boton {
+        padding:5px 10px;
+    }
+    #busqueda .promo.cuba h3 {
+        font-size:1.4em;
+        letter-spacing: -1px;
+    }
+    #busqueda .promo.cuba h3 .descuento {
+        font-size:1.3em;
+        margin:0;
+    }
+}
+
+@media screen and (max-width:555px) {
+    #menu-personal {
+        display: none;
+    }
+}
+
+@media screen and (max-width:535px) {
+    #busqueda .filtros label,
+    #busqueda .filtros select{
+        display: block;
+    }
+    #busqueda .filtros label[for="moneda"]{
+        margin-top:20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #busqueda .promo .triangulo {
+        display:none;
+    }
+    #busqueda .relleno {
+        float: none;
+    }
+    #busqueda .promo .col-3,
+    #busqueda .promo.paris .col-4,
+    #busqueda .promo.cuba .col-4,
+    #busqueda article.promo.cuba #colCuba.col-4{
+        width:100%;
+        border:none;
+    }
+    #busqueda .promo.paris h3,
+    #busqueda .promo.cuba h3{
+        font-size:2em;
+    }
+    #busqueda .promo.paris a.boton,
+    #busqueda .promo.cuba a.boton{
+        margin:0 0 10px;
+        display: inline-block;
+        padding:10px 60px;
+    }
+    
+    footer .news-secundario input[type="email"] {
+        width:60%;
+        padding-right:5px;
+    }
+    
+}
